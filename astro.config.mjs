@@ -15,7 +15,7 @@ import tailwind from "@astrojs/tailwind";
 
 const SERVER_PORT = 3000;
 // the url to access your blog during local development
-const LOCALHOST_URL = `http://localhost:${SERVER_PORT}`;
+const LOCALHOST_URL = `https://Aabayoumy.github.io`;
 // the url to access your blog after deploying it somewhere (Eg. Netlify)
 const LIVE_URL = "https://test.abayoumy.tech";
 // this is the astro command your npm script runs
@@ -30,6 +30,7 @@ if (isBuild) {
 export default defineConfig({
   server: { port: SERVER_PORT },
   site: BASE_URL,
+  base: '/Aabayoumy',
   integrations: [
     sitemap(),
     tailwind({
